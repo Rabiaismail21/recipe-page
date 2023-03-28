@@ -1,0 +1,137 @@
+@import "abstracts/variables";
+@import "abstracts/sass-utilities";
+@import "abstracts/mixins";
+@import "base/reset";
+@import "base/typography";
+@import "layout/header";
+@import "layout/footer";
+
+.main__content {
+  width: 70vw;
+  margin-top: 3rem;
+
+  @include responsive {
+    width: 90vw;
+  }
+  .recipe-content {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    flex-direction: row-reverse;
+    @include responsive {
+      flex-direction: column;
+    }
+    .recipe {
+      width: 80%;
+      @include responsive {
+        width: 100%;
+      }
+      .recipe-ingredients {
+        .recipe-items {
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          li {
+            list-style-type: none;
+            margin-left: -2rem;
+            margin-bottom: 0.2rem;
+            strong {
+              padding: 0 0.2rem;
+            }
+            i {
+              padding-right: 0.5rem;
+              color: $light-gray;
+            }
+          }
+        }
+      }
+
+      .recipe-instructions {
+        margin-bottom: 3rem;
+        .instruction {
+          gap: 0.8rem;
+          margin-bottom: 1.5rem;
+          .num {
+            padding: 0 0.7rem;
+            background-color: $orange;
+            border-radius: $xs-radius;
+            h3 {
+              color: $white;
+              position: relative;
+              bottom: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.source {
+  color: $light-gray;
+}
+
+.aside-menu {
+  width: 20%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-height: 367px;
+  border-radius: $md-radius;
+  padding: 3.5rem 0;
+  justify-content: space-between;
+  @include responsive {
+    width: 100%;
+    box-shadow: none;
+    align-items: start;
+    padding: 0;
+    justify-content: start;
+  }
+  .yields {
+    gap: 0.5rem;
+    i {
+      color: $orange;
+    }
+    .info {
+      h5 {
+        color: $light-gray;
+      }
+      p {
+        color: $orange;
+        padding-top: 0.3rem;
+      }
+    }
+  }
+}
+
+.wrap-other {
+  height: calc(367px / 2);
+  gap: 2.5rem;
+  margin-top: -1rem;
+  @include responsive {
+    flex-direction: row;
+    margin: 0;
+    height: 100px;
+  }
+  .item {
+    gap: 0.8rem;
+    @include responsive {
+      gap: 0.3rem;
+    }
+    i {
+      color: $gray;
+    }
+
+    .info {
+      line-height: 0.8rem;
+      @include responsive {
+      line-height: 0.5rem;
+      }
+      h5 {
+        color: $light-gray;
+      }
+      p {
+        padding-top: 0.3rem;
+      }
+    }
+  }
+}

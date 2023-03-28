@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    .creater {
+      color: $medium-gray;
+      text-decoration: none;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  

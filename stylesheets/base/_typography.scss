@@ -1,0 +1,110 @@
+.recipe-title {
+    font-family: $font-display;
+    font-size: $font-48;
+    @include responsive {
+        font-size: $font-24;
+    }
+}
+.tagline-text {
+    font-family: $font-montserrat;
+    color: $gray;
+    font-size: $font-14;
+    line-height: 17.07px;
+    font-style: $font-italic;
+    font-weight: $font-medium;
+    @include responsive {
+        font-size: $font-12;
+    }
+}
+
+.recipe-ingredients, .recipe-instructions {
+    h2, h3 {
+        font-family: $font-display;
+    }
+    h2 {
+        margin-bottom: 2rem;
+        font-size: $font-24;
+    }
+    h3 {
+        font-weight: $font-thin;
+        font-style: $font-italic;
+        font-size: $font-18;
+
+    }
+}
+.recipe-items{
+    li {
+        font-size: $font-14;
+        font-family: $font-montserrat;
+        line-height: 25px;
+         i {
+            font-size: 1.2rem;
+            font-weight: $font-thin;
+         }
+         .italic {
+            font-style: $font-italic;
+            
+          }
+    }
+} 
+
+.recipe-instructions {
+    .instruction{
+        .num {
+            h3 {
+             font-size: $font-24;
+              font-family: $font-display;
+              font-weight: $font-bold;
+            }
+        }
+        p {
+           font-family: $font-montserrat;
+           font-weight: $font-thin;
+           font-size: $font-16;
+           line-height: $font-24;
+        }
+    }
+}
+.info {
+    h5{
+      font-family: $font-montserrat;
+      font-size: $font-12;
+      font-weight: $font-bold;
+      @include responsive {
+        font-size: $font-8;
+      }
+    }
+    p {
+      font-family: $font-montserrat;
+      font-size: $font-14;
+      font-weight: $font-medium;
+      @include responsive {
+        font-size: $font-10;
+      }
+    }
+  }
+  .yields, .item {
+    i {
+      font-size: 1.8rem;
+      @include responsive {
+        font-size: $font-18;
+      }
+    }
+}
+
+.source {
+   font-family: $font-montserrat;
+   font-size: $font-16;
+   @include responsive{
+    font-size: $font-14;
+   }
+  }
+
+  .footer {
+    font-family: $font-montserrat;
+    font-size: $font-14;
+    font-weight: $font-medium;
+    span {
+        font-weight: $font-bold;
+    }
+  }
